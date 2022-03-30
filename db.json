@@ -1,0 +1,16 @@
+{
+    "users" : [
+        {
+            "name" : "Alejandro",
+            "last_name": "Lugo",
+            "email_address" : "a.lugo@colegiopiamonte.edu.mx",
+            "password_" : "12345678"
+        },
+        {
+            "name" : "Esteban",
+            "last_name": "Sanchez",
+            "email_address" : "e.sanchez@colegiopiamonte.edu.mx",
+            "password_" : "87654321"
+        }
+    ]
+}
