@@ -1,7 +1,6 @@
 import logo_escuela from '../san_esteban_logo.png'
-import './Login.css'
-import LoginForm from '../components/LoginForm'
-import FooterLogin from '../components/FooterLogin'
+import LoginForm from '../Components/LoginForm'
+import FooterLogin from '../Components/FooterLogin'
 
 function Login() {
     return (

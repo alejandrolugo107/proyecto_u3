@@ -1,4 +1,4 @@
-import '../components/LoginForm.css'
+import './LoginForm.css'
 import { useState } from 'react';
 
 
@@ -26,9 +26,9 @@ function LoginForm() {
         <div className="container">
             <div className="row">
             <form onSubmit={handleSubmit}>
-                <div class="form-group mb-2">
-                    <label className="mb-2" htmlfor="correoUsuario">Correo Electronico:</label>
-                        <input class="form-control" id="correoUsuario" aria-describedby="emailHelp"
+                <div className="form-group mb-2">
+                    <label className="mb-2" htmlFor="correoUsuario">Correo Electrónico:</label>
+                        <input className="form-control" id="correoUsuario" aria-describedby="emailHelp"
                             type="email"
                             required
                             value={email}
@@ -36,16 +36,16 @@ function LoginForm() {
                         />
         
                 </div>
-                <div class="form-group mb-2">
-                    <label className="mb-2" for="passwordUsuario">Contrasena:</label>
-                        <input class="form-control" id="passwordUsuario"
+                <div className="form-group mb-2">
+                    <label className="mb-2" htmlFor="passwordUsuario">Contraseña:</label>
+                        <input className="form-control" id="passwordUsuario"
                             type="password"
                             required
                             value={password}
                             onChange = {(e)=> setPassword(e.target.value)}
                         />
                 </div>
-                    <button type="submit" class="btn btn-primary w-100 mt-3 mb-4">Ingresar</button>
+                    <button type="submit" className="btn btn-primary w-100 mt-3 mb-4">Ingresar</button>
             </form>
             </div>
         </div>  
