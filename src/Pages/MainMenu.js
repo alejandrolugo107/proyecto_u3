@@ -2,7 +2,7 @@ import Navbar from '../Components/Navbar'
 
 function MainMenu() {
     return (
-        <div className="container-fluid">
+        <div>
             <Navbar></Navbar>
         </div>
     );
