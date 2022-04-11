@@ -1,4 +1,5 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import navbarLogo from '../../src/navbarlogo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell } from '@fortawesome/free-solid-svg-icons'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
 
@@ -6,7 +7,7 @@ function Navbar() {
     return (
         <div>
 
-            <nav className="navbar navbar-expand-lg navbar-light bg-ligh">
+            <nav className="navbar navbar-expand-lg navbar-light bg-ligh mb-4">
 
                 <div className="container-fluid">
 
@@ -24,10 +25,10 @@ function Navbar() {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <a className="navbar-brand mt-2 mt-lg-0" href="#">
+                    <a className="navbar-brand mt-2 mt-lg-0" href="">
                         <img
-                        src=""
-                        height="15"
+                        src={navbarLogo}
+                        height="30"
                         alt="Logo"
                         loading="lazy"
                         />
@@ -35,13 +36,13 @@ function Navbar() {
 
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <a className="nav-link" href="#">Altas</a>
+                        <a className="nav-link" href="">Altas</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">Modificaciones</a>
+                        <a className="nav-link" href="">Modificaciones</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">Reportes</a>
+                        <a className="nav-link" href="">Reportes</a>
                         </li>
                     </ul>
 
@@ -54,7 +55,7 @@ function Navbar() {
                     <div className="dropdown">
                         <a
                         className="text-reset me-3 dropdown-toggle hidden-arrow"
-                        href="#"
+                        href=""
                         id="navbarDropdownMenuLink"
                         role="button"
                         data-mdb-toggle="dropdown"
@@ -68,13 +69,13 @@ function Navbar() {
                         aria-labelledby="navbarDropdownMenuLink"
                         >
                         <li>
-                            <a className="dropdown-item" href="#">Some news</a>
+                            <a className="dropdown-item" href="">Some news</a>
                         </li>
                         <li>
-                            <a className="dropdown-item" href="#">Another news</a>
+                            <a className="dropdown-item" href="">Another news</a>
                         </li>
                         <li>
-                            <a className="dropdown-item" href="#">Something else here</a>
+                            <a className="dropdown-item" href="">Something else here</a>
                         </li>
                         </ul>
                     </div>
@@ -82,7 +83,7 @@ function Navbar() {
                     <div className="dropdown">
                         <a
                         className="dropdown-toggle d-flex align-items-center hidden-arrow"
-                        href="#"
+                        href=""
                         id="navbarDropdownMenuAvatar"
                         role="button"
                         data-mdb-toggle="dropdown"
@@ -101,13 +102,13 @@ function Navbar() {
                         aria-labelledby="navbarDropdownMenuAvatar"
                         >
                         <li>
-                            <a className="dropdown-item" href="#">My profile</a>
+                            <a className="dropdown-item" href="">My profile</a>
                         </li>
                         <li>
-                            <a className="dropdown-item" href="#">Settings</a>
+                            <a className="dropdown-item" href="">Settings</a>
                         </li>
                         <li>
-                            <a className="dropdown-item" href="#">Logout</a>
+                            <a className="dropdown-item" href="">Logout</a>
                         </li>
                         </ul>
                     </div>

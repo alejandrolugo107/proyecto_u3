@@ -1,24 +1,41 @@
 import './LoginForm.css'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom' 
 
 
 function LoginForm() {
+    
 
+    let navi_ = useNavigate();
+
+    function redirect_Profile() {
+        navi_('/main')
+    }
+
+
+    //Fake Login Details
     const email_user = "a.lugo@colegiopiamonte.edu.mx";
     const pass_user = "12345678";
 
+    //UseState
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
- 
+    
+
+
+    //PreventDefault
     const handleSubmit = (e) => {
         e.preventDefault()
         const login_request = {
             email, password
         }
+
+        //ValidateCredentials
         if (login_request.email === email_user && login_request.password === pass_user) {
-            console.log("Successfully Logged In");
+            alert("Bienvenido")
+            redirect_Profile();
         } else {
-            console.log("Wrong credentials provided");
+            alert("Credenciales de acceso no validas")
         }
      }
     
