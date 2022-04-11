@@ -2,7 +2,7 @@
 
 function Altas() {
   return (
-      <div className="container mt-3">
+      <div className="container mt-4">
           <form class="row g-3 needs-validation" novalidate>
               <caption>Captura de altas</caption>
                 <div class="col-md-4">
@@ -40,7 +40,8 @@ function Altas() {
                     <button class="btn btn-success" type="submit">Agregar</button>
                 </div>
             </form>
-    </div>
+      </div>
+      
   )
 }
 
