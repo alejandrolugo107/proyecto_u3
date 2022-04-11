@@ -1,3 +1,4 @@
+import Tabla_Altas from "./Tabla_Altas"
 
 
 function Altas() {
@@ -37,9 +38,12 @@ function Altas() {
                 </div>
             
                 <div class="col-12">
-                    <button class="btn btn-success" type="submit">Agregar</button>
+                    <button class="btn btn-success my-2" type="submit">Agregar</button>
                 </div>
-            </form>
+          </form>
+          
+          <br />
+          <Tabla_Altas/>
       </div>
       
   )
